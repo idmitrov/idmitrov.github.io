@@ -1,0 +1,157 @@
+@font-face {
+  font-family: "Roboto";
+  src: url("../fonts/roboto/Roboto-Bold.woff2") format("woff2"),
+    url("../fonts/roboto/Roboto-Bold.woff") format("woff");
+  font-weight: bold;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "Roboto";
+  src: url("../fonts/roboto/Roboto-Thin.woff2") format("woff2"),
+    url("../fonts/roboto/Roboto-Thin.woff") format("woff");
+  font-weight: 100;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "Roboto";
+  src: url("../fonts/roboto/Roboto-Regular.woff2") format("woff2"),
+    url("../fonts/roboto/Roboto-Regular.woff") format("woff");
+  font-weight: normal;
+  font-style: normal;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+html {
+  font-size: 10px;
+  height: 100vh;
+  background: rgb(238, 238, 238);
+  background: -moz-linear-gradient(
+    top,
+    rgba(238, 238, 238, 1) 0%,
+    rgba(255, 255, 255, 1) 100%
+  );
+  background: -webkit-linear-gradient(
+    top,
+    rgba(238, 238, 238, 1) 0%,
+    rgba(255, 255, 255, 1) 100%
+  );
+  background: linear-gradient(
+    to bottom,
+    rgba(238, 238, 238, 1) 0%,
+    rgba(255, 255, 255, 1) 100%
+  );
+  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#eeeeee', endColorstr='#ffffff', GradientType=0);
+  background-repeat: no-repeat;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  text-align: center;
+  font-size: 1.6rem;
+  font-family: Roboto, sans-serif;
+  font-weight: normal;
+  padding: 0 16px;
+}
+
+#top-panel,
+main {
+  max-width: 33rem;
+  margin: 0 auto;
+  padding: 0 1.6rem;
+}
+
+.title,
+.image {
+  margin: 0 0 1.6rem;
+}
+
+.title {
+  text-transform: uppercase;
+  color: #222;
+}
+
+.subtitle {
+  font-size: 14px;
+  margin: 0 0 1.6rem;
+  color: #444;
+  font-family: Roboto;
+  font-weight: 600;
+  max-width: 100%;
+  white-space: normal;
+}
+
+.button {
+  display: block;
+  padding: 1.6rem;
+  text-decoration: none;
+  color: #fff;
+  background-color: #222;
+  text-transform: uppercase;
+  border-radius: 1.6rem;
+}
+
+.button:hover {
+  color: #eee;
+}
+
+.section > .title {
+  font-family: Roboto;
+  font-weight: 100;
+  font-size: 3.2rem;
+}
+
+.article .title {
+  font-family: Roboto;
+  font-weight: bold;
+  font-size: 1.6rem;
+  margin-bottom: 8px !important;
+}
+
+#top-panel {
+  display: flex;
+  flex-flow: column;
+  justify-content: flex-end;
+  padding: 1.6rem;
+  background-color: #eee;
+  border-bottom-left-radius: 3.2rem;
+  border-bottom-right-radius: 3.2rem;
+  box-shadow: 0 0.3rem 0.6rem #707070;
+  min-height: calc(100vh - 76px);
+}
+
+#top-panel figure {
+  margin: 0 0 1.6rem;
+}
+
+#top-panel figure img {
+  max-width: 25.6rem;
+  margin: 0 auto;
+  border-radius: 50%;
+  border: solid 4px #fff;
+  box-shadow: 0 3px 6px #707070;
+}
+
+#socials-panel {
+  padding: 1.6rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.social {
+  width: 44px;
+  height: 44px;
+  border-radius: 50%;
+  overflow: hidden;
+}
+
+.social img {
+  display: block;
+  max-width: 100%;
+}
